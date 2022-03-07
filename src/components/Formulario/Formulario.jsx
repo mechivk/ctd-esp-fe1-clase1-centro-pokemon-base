@@ -32,19 +32,21 @@ const Formulario = () => {
                 <span>ENTRENADOR</span>
               </p>
               <Input
+                type="ACTUALIZAR_ENTRENADOR"
                 name="nombre"
                 label="Nombre"
                 placeholder="Ingrese su nombre"
               />
               <Input
+                type="ACTUALIZAR_ENTRENADOR"
                 name="apellido"
                 label="Apellido"
                 placeholder="Ingrese su apellido"
               />
               <Input
+                type="ACTUALIZAR_ENTRENADOR"
                 name="email"
                 label="Email"
-                type="email"
                 placeholder="Ingrese su email"
               />
             </div>
@@ -54,26 +56,31 @@ const Formulario = () => {
                 <span>POKEMON</span>
               </p>
               <Input
+                type="ACTUALIZAR_POKEMON"
                 name="nombrePokemon"
                 label="Nombre"
                 placeholder="Ingrese el nombre de su pokemon"
               />
               <Input
+                type="ACTUALIZAR_POKEMON"
                 name="tipoPokemon"
                 label="Tipo"
                 placeholder="Ingrese el tipo de su pokemon"
               />
               <Input
+                type="ACTUALIZAR_POKEMON"
                 name="elementoPokemon"
                 label="Elemento"
                 placeholder="Ingrese el elemento de su pokemon"
               />
               <Input
+                type="ACTUALIZAR_POKEMON"
                 name="alturaPokemon"
                 label="Altura"
                 placeholder="Ingrese la altura de su pokemon"
               />
               <Input
+                type="ACTUALIZAR_POKEMON"
                 name="edadPokemon"
                 label="Edad"
                 placeholder="Ingrese la edad de su pokemon"

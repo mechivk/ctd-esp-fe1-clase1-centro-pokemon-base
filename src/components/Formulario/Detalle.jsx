@@ -19,19 +19,19 @@ const Detalle = () => {
       <section className="datos-cliente">
         <h4>Datos del Entrenador</h4>
         <div className="fila">
-          <p>Nombre: {formInfo.nombre}</p>
-          <p>Apellido: {formInfo.apellido}</p>
-          <p>Email: {formInfo.email}</p>
+          <p>Nombre: {formInfo.entrenador.nombre}</p>
+          <p>Apellido: {formInfo.entrenador.apellido}</p>
+          <p>Email: {formInfo.entrenador.email}</p>
         </div>
       </section>
       <section className="datos-cliente">
         <h4>Datos del Pokémon</h4>
         <div className="fila">
-          <p>Nombre: {formInfo.nombrePokemon}</p>
-          <p>Tipo: {formInfo.tipoPokemon}</p>
-          <p>Elemento: {formInfo.elementoPokemon}</p>
-          <p>Altura: {formInfo.alturaPokemon}</p>
-          <p>Edad: {formInfo.edadPokemon}</p>
+          <p>Nombre: {formInfo.pokemon.nombre}</p>
+          <p>Tipo: {formInfo.pokemon.tipo}</p>
+          <p>Elemento: {formInfo.pokemon.elemento}</p>
+          <p>Altura: {formInfo.pokemon.altura}</p>
+          <p>Edad: {formInfo.pokemon.edad}</p>
         </div>
       </section>
       <button

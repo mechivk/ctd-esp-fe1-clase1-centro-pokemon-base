@@ -1,8 +1,4 @@
-import React, {
-  //useContext,
-  useState,
-  useContext,
-} from "react";
+import React, { useState, useContext } from "react";
 import { FormContext } from "../../context/FormContext";
 
 const Input = ({ name, label, type = "text", placeholder }) => {
@@ -16,16 +12,11 @@ const Input = ({ name, label, type = "text", placeholder }) => {
   const onBlur = (event) => {
     event.preventDefault();
     context.dispatch({
-      type: "EDIT",
+      type: type,
       attribute: name,
       payload: inputValue,
     });
   };
-
-  /* const onBlur = (event) => {
-    event.preventDefault();
-    context.updateFormInfo(name, inputValue);
-  };*/
 
   return (
     <div className="input-contenedor">
