@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { FormContext } from "../../context/FormContext";
 
-const Input = ({ name, label, type = "text", placeholder }) => {
+const Input = ({ name, label, type = "text", action, placeholder }) => {
   const context = useContext(FormContext);
   const [inputValue, setInputValue] = useState();
 
@@ -12,7 +12,7 @@ const Input = ({ name, label, type = "text", placeholder }) => {
   const onBlur = (event) => {
     event.preventDefault();
     context.dispatch({
-      type: type,
+      type: action,
       attribute: name,
       payload: inputValue,
     });
