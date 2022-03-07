@@ -20,19 +20,15 @@ export const reducer = (state, action) => {
     case "ACTUALIZAR_ENTRENADOR":
       return {
         ...state,
-        ...{
-          entrenador: {
-            ...state.entrenador,
-            [action.attribute]: action.payload,
-          },
+        entrenador: {
+          ...state.entrenador,
+          [action.attribute]: action.payload,
         },
       };
     case "ACTUALIZAR_POKEMON":
       return {
         ...state,
-        ...{
-          pokemon: { ...state.pokemon, [action.attribute]: action.payload },
-        },
+        pokemon: { ...state.pokemon, [action.attribute]: action.payload },
       };
     default:
       throw new Error("No se ha recibido ningun tipo de acción...");

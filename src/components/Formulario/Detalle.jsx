@@ -7,10 +7,6 @@ const Detalle = () => {
   // la vista previa.
   const { formInfo } = useContext(FormContext);
 
-  useEffect(() => {
-    console.log(formInfo);
-  }, [formInfo]);
-
   return (
     <div className="detalle-formulario">
       <div className="encabezado">

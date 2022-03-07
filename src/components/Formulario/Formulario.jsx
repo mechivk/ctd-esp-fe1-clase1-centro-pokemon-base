@@ -57,31 +57,31 @@ const Formulario = () => {
               </p>
               <Input
                 action="ACTUALIZAR_POKEMON"
-                name="nombrePokemon"
+                name="nombre"
                 label="Nombre"
                 placeholder="Ingrese el nombre de su pokemon"
               />
               <Input
                 action="ACTUALIZAR_POKEMON"
-                name="tipoPokemon"
+                name="tipo"
                 label="Tipo"
                 placeholder="Ingrese el tipo de su pokemon"
               />
               <Input
                 action="ACTUALIZAR_POKEMON"
-                name="elementoPokemon"
+                name="elemento"
                 label="Elemento"
                 placeholder="Ingrese el elemento de su pokemon"
               />
               <Input
                 action="ACTUALIZAR_POKEMON"
-                name="alturaPokemon"
+                name="altura"
                 label="Altura"
                 placeholder="Ingrese la altura de su pokemon"
               />
               <Input
                 action="ACTUALIZAR_POKEMON"
-                name="edadPokemon"
+                name="edad"
                 label="Edad"
                 placeholder="Ingrese la edad de su pokemon"
               />
